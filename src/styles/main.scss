@@ -6,3 +6,48 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.gallery {
+  display: block;
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.gallery div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1300px;
+  height: 1010px;
+  border: 1px solid black;
+}
+
+.gallery__list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.list-item__link {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  height: $link-size;
+  width: $link-size;
+}
+
+.list-item__link:hover {
+  box-shadow: 0 0 10px rgb(0,0,0);
+  cursor: pointer;
+}
+
+.gallery__thumb {
+  margin: 0 auto;
+  width: $image-size;
+  height: $image-size;
+}
+
+ul {
+  padding: 0;
+}
