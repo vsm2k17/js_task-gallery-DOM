@@ -14,7 +14,7 @@ body {
 
 .gallery {
   display: block;
-  width: 70vw;
+  width: 60vw;
   margin: 0 auto; }
 
 .gallery div:first-child {
@@ -28,7 +28,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  height: 65vh;
+  height: 70vh;
   border: 1px solid black; }
 
 .gallery__large-img {
@@ -49,7 +49,7 @@ body {
           justify-content: space-between; }
 
 .list-item {
-  width: 20%; }
+  width: 19%; }
 
 .list-item__link {
   display: -webkit-box;
@@ -59,8 +59,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid black;
-  height: 100%;
-  width: 90%; }
+  height: 100%; }
 
 .list-item__link:hover {
   -webkit-box-shadow: 0 0 10px black;
