@@ -5,16 +5,11 @@ const bigImage = document.querySelector('#largeImg');
 function onClick(even) {
   even.preventDefault();
 
-  let src = even.toElement.src.split('-');
+  const item = even.target.closest('.list-item__link');
 
-  src.pop();
-  src = src.join('-').concat('.png');
-
-  bigImage.setAttribute('src', src);
+  bigImage.setAttribute('src', item.href);
 }
 
-const img1 = document.querySelectorAll(`.gallery__img`);
+const img = document.querySelector(`.gallery__list`);
 
-for (let i = 0; i < img1.length; i++) {
-  img1[i].addEventListener('click', onClick);
-}
+img.addEventListener('click', onClick);
